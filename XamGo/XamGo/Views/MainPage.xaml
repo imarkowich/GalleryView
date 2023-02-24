@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamGo.Helpers"
+             x:Class="XamGo.MainPage">
+
+    <StackLayout>
+        <!-- Title -->
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Gallery Page"
+                   
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="36"/>
+        </Frame>
+        <!-- <Image Source="{local:ImageResource XamGo.Resources.Thumbnails.wild-giraffe.jpg}" Aspect="AspectFill"/> -->
+        <!-- Gallery: 3x Grid of Images -->
+        <CollectionView x:Name="collectBig"
+                ItemsLayout="VerticalGrid, 3"
+                BackgroundColor="tan"
+                Margin="10">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="5"
+                          Margin="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                 
+                        <Image Grid.Row="0"
+                               Grid.Column="0"
+                               x:Name="imgBlock"
+                               HeightRequest="{Binding Source={x:Reference imgBlock}, Path=Width}"
+                               BackgroundColor="white"
+                               Source="{Binding thumbnail}"
+                               Aspect="Fill">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnImgTapped" 
+                                        CommandParameter="{Binding ID}" />
+
+                            </Image.GestureRecognizers>
+                              
+                        </Image>
+                        
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
+
+<!--
+<CollectionView ItemsSource="{Binding Monkeys}"
+                ItemsLayout="VerticalGrid, 2">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35" />
+                            <RowDefinition Height="35" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70" />
+                            <ColumnDefinition Width="80" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2"
+                               Source="{Binding ImageUrl}"
+                               Aspect="AspectFill"
+                               HeightRequest="60"
+                               WidthRequest="60" />
+                        <Label Grid.Column="1"
+                               Text="{Binding Name}"
+                               FontAttributes="Bold"
+                               LineBreakMode="TailTruncation" />
+                        <Label Grid.Row="1"
+                               Grid.Column="1"
+                               Text="{Binding Location}"
+                               LineBreakMode="TailTruncation"
+                               FontAttributes="Italic"
+                               VerticalOptions="End" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+-->

@@ -1,0 +1,131 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\" />
+    <None Remove="Models\" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\Pictures\" />
+    <None Remove="Helpers\" />
+    <None Remove="Resources\Pictures\wild-giraffe.jpg" />
+    <None Remove="Resources\Pictures\PlaylistCareerReadiness.png" />
+    <None Remove="Resources\Pictures\school outside of Durban.jpg" />
+    <None Remove="Resources\Pictures\IMG_8298.jpg" />
+    <None Remove="Resources\Pictures\IMG_7355_Original.jpg" />
+    <None Remove="Resources\Pictures\IMG_1218.jpg" />
+    <None Remove="Resources\Pictures\good-faces-xmSWVeGEnJw-unsplash.jpg" />
+    <None Remove="Resources\Pictures\DSC_0765.jpg" />
+    <None Remove="Resources\Pictures\Children-Standing-Desks.jpeg" />
+    <None Remove="Resources\Pictures\20200919_142340.jpg" />
+    <None Remove="Resources\Pictures\20200808_195811.jpg" />
+    <None Remove="Resources\Pictures\20200607_172218-2.jpg" />
+    <None Remove="Resources\Pictures\20191229_120351.jpg" />
+    <None Remove="Resources\Pictures\11 year olds tweents.jpg" />
+    <None Remove="Resources\Thumbnails\" />
+    <None Remove="Resources\Thumbnails\11 year olds tweents.jpg" />
+    <None Remove="Resources\Thumbnails\20191229_120351.jpg" />
+    <None Remove="Resources\Thumbnails\20200607_172218-2.jpg" />
+    <None Remove="Resources\Thumbnails\20200808_195811.jpg" />
+    <None Remove="Resources\Thumbnails\20200919_142340.jpg" />
+    <None Remove="Resources\Thumbnails\wild-giraffe.jpg" />
+    <None Remove="Resources\Thumbnails\Children-Standing-Desks.jpeg" />
+    <None Remove="Resources\Thumbnails\DSC_0765.jpg" />
+    <None Remove="Resources\Thumbnails\good-faces-xmSWVeGEnJw-unsplash.jpg" />
+    <None Remove="Resources\Thumbnails\IMG_1218.jpg" />
+    <None Remove="Resources\Thumbnails\IMG_7355_Original.jpg" />
+    <None Remove="Resources\Thumbnails\IMG_8298.jpg" />
+    <None Remove="Resources\Thumbnails\nathan-dumlao-71u2fOofI-U-unsplash.jpg" />
+    <None Remove="Resources\Thumbnails\PlaylistCareerReadiness.png" />
+    <None Remove="Resources\Pictures\nathan-dumlao-71u2fOofI-U-unsplash.jpg" />
+    <None Remove="Resources\Thumbnails\school outside of Durban.jpg" />
+    <None Remove="Resources\Thumbnails\24-36in.jpg" />
+    <None Remove="Resources\Pictures\24-36in.jpg" />
+    <None Remove="Resources\Pictures\gator1.jpeg" />
+    <None Remove="Resources\Pictures\gator2.jpeg" />
+    <None Remove="Resources\Pictures\gator3.jpeg" />
+    <None Remove="Resources\Pictures\gator4.jpeg" />
+    <None Remove="Resources\Pictures\gator5.jpeg" />
+    <None Remove="Resources\Pictures\gator6.jpeg" />
+    <None Remove="Resources\Pictures\gator7.jpeg" />
+    <None Remove="Resources\Pictures\gator8.jpeg" />
+    <None Remove="Resources\Thumbnails\gator1.jpeg" />
+    <None Remove="Resources\Thumbnails\gator2.jpeg" />
+    <None Remove="Resources\Thumbnails\gator3.jpeg" />
+    <None Remove="Resources\Thumbnails\gator4.jpeg" />
+    <None Remove="Resources\Thumbnails\gator5.jpeg" />
+    <None Remove="Resources\Thumbnails\gator6.jpeg" />
+    <None Remove="Resources\Thumbnails\gator7.jpeg" />
+    <None Remove="Resources\Thumbnails\gator8.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
+    <Folder Include="Models\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Resources\Pictures\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Resources\Thumbnails\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Pictures\wild-giraffe.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\PlaylistCareerReadiness.png" />
+    <EmbeddedResource Include="Resources\Pictures\school outside of Durban.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\IMG_8298.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\IMG_7355_Original.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\IMG_1218.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\good-faces-xmSWVeGEnJw-unsplash.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\DSC_0765.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\Children-Standing-Desks.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\20200919_142340.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\20200808_195811.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\20200607_172218-2.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\20191229_120351.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\11 year olds tweents.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\11 year olds tweents.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\20191229_120351.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\20200607_172218-2.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\20200808_195811.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\20200919_142340.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\wild-giraffe.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\Children-Standing-Desks.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\DSC_0765.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\good-faces-xmSWVeGEnJw-unsplash.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\IMG_1218.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\IMG_7355_Original.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\IMG_8298.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\nathan-dumlao-71u2fOofI-U-unsplash.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\PlaylistCareerReadiness.png" />
+    <EmbeddedResource Include="Resources\Pictures\nathan-dumlao-71u2fOofI-U-unsplash.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\school outside of Durban.jpg" />
+    <EmbeddedResource Include="Resources\Thumbnails\24-36in.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\24-36in.jpg" />
+    <EmbeddedResource Include="Resources\Pictures\gator1.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\gator2.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\gator3.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\gator4.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\gator5.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\gator6.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\gator7.jpeg" />
+    <EmbeddedResource Include="Resources\Pictures\gator8.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator1.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator2.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator3.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator4.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator5.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator6.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator7.jpeg" />
+    <EmbeddedResource Include="Resources\Thumbnails\gator8.jpeg" />
+  </ItemGroup>
+</Project>
