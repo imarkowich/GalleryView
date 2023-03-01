@@ -18,6 +18,7 @@
         <CollectionView x:Name="collectBig"
                 ItemsLayout="VerticalGrid, 3"
                 BackgroundColor="tan"
+                VerticalOptions="FillAndExpand"
                 Margin="10">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
